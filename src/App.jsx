@@ -10,6 +10,7 @@ const content = {
     pageTitle: 'Bowo Travel | Private Travel Service',
     navLabel: 'Primary navigation',
     brandKicker: 'Private driver service',
+    headerNote: 'Airport transfer, city rides, and private trips with quick booking.',
     nav: {
       services: 'Services',
       pricing: 'Pricing',
@@ -171,6 +172,7 @@ const content = {
     pageTitle: 'Bowo Travel | Layanan Travel Pribadi',
     navLabel: 'Navigasi utama',
     brandKicker: 'Layanan driver pribadi',
+    headerNote: 'Transfer bandara, perjalanan kota, dan trip pribadi dengan booking cepat.',
     nav: {
       services: 'Layanan',
       pricing: 'Harga',
@@ -364,9 +366,10 @@ function App() {
   return (
     <div className="page-shell">
       <header className="topbar">
-        <div>
+        <div className="brand-block">
           <p className="brand-kicker">{t.brandKicker}</p>
           <h2 className="brand-name">Bowo Travel</h2>
+          <p className="brand-note">{t.headerNote}</p>
         </div>
 
         <div className="topbar-actions">

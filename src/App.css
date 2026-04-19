@@ -5,19 +5,36 @@
 }
 
 .topbar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: 24px;
-  padding: 16px 8px 24px;
+  gap: 18px;
+  padding: 16px 18px;
+  margin: 6px 8px 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.brand-block {
+  max-width: 560px;
+}
+
+.brand-note {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 0.96rem;
+  line-height: 1.45;
 }
 
 .topbar-actions {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
 }
 
 .lang-switcher {
@@ -444,7 +461,9 @@
 
 @media (max-width: 960px) {
   .topbar {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: sticky;
     top: 10px;
     z-index: 20;
@@ -457,10 +476,21 @@
     backdrop-filter: blur(10px);
   }
 
+  .brand-block {
+    max-width: 100%;
+  }
+
+  .brand-note {
+    max-width: 36rem;
+  }
+
   .topbar-actions {
-    display: grid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 12px;
-    margin-top: 14px;
+    margin-top: 4px;
   }
 
   .lang-switcher {
@@ -468,9 +498,10 @@
   }
 
   .topnav {
+    width: 100%;
     margin-top: 0;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
   }
 
@@ -480,10 +511,11 @@
     border-radius: 12px;
     background: #f8fafc;
     border: 1px solid #e2e8f0;
+    flex: 0 0 auto;
   }
 
   .nav-cta {
-    grid-column: 1 / -1;
+    width: auto;
   }
 
   .carousel-card {
@@ -559,8 +591,13 @@
     font-size: 1.25rem;
   }
 
+  .brand-note {
+    font-size: 0.9rem;
+  }
+
   .topnav a {
     font-size: 0.92rem;
+    flex: 1 1 calc(50% - 10px);
   }
 
   .quick-points {
