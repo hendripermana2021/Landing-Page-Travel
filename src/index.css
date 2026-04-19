@@ -1,0 +1,56 @@
+/* ── Google Fonts ───────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── CSS Variables ──────────────────────────────── */
+:root {
+  --primary: #10785a;
+  --primary-dark: #0b5e47;
+  --primary-light: #4dd4a0;
+  --dark: #0f1923;
+  --text-muted: #6b7280;
+  --bg-light: #f7f9fb;
+
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #374151;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
