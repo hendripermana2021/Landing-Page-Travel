@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 const phoneNumber = '+62 812-6099-9044'
-const whatsappLink = 'https://wa.me/6281260999044'
 const slideImages = ['/slide-airport.svg', '/slide-city.svg', '/slide-beach.svg']
 
 const content = {
@@ -337,6 +336,11 @@ function App() {
   const [language, setLanguage] = useState('en')
 
   const t = content[language]
+  const whatsappMessage =
+    language === 'id'
+      ? `Halo Bowo Travel, saya ingin booking layanan travel.%0A%0ANama:%0ATanggal perjalanan:%0AJam penjemputan:%0ALokasi jemput:%0ATujuan:%0AJumlah penumpang:%0A%0ATerima kasih.`
+      : `Hello Bowo Travel, I would like to book your travel service.%0A%0AName:%0ATravel date:%0APickup time:%0APickup location:%0ADestination:%0ANumber of passengers:%0A%0AThank you.`
+  const whatsappLink = `https://wa.me/6281260999044?text=${whatsappMessage}`
   const current = {
     image: slideImages[currentSlide],
     ...t.gallery.slides[currentSlide],
