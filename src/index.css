@@ -1,6 +1,3 @@
-/* ── Google Fonts ───────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
-
 /* ── CSS Variables ──────────────────────────────── */
 :root {
   --primary: #10785a;
@@ -33,6 +30,12 @@ body {
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
+}
+
+@media (max-width: 560px) {
+  body {
+    padding-bottom: 84px;
+  }
 }
 
 img {
