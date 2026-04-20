@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 const phoneNumber = '+62 812-6099-9044'
-const slideImages = ['/slide-airport.svg', '/slide-city.svg', '/slide-beach.svg']
+const slideImages = ['/img/car-1-real.jpeg', '/img/car-2-real.jpeg', '/img/car-3-real.jpeg']
 
 const content = {
   en: {
@@ -38,10 +38,10 @@ const content = {
       ],
     },
     gallery: {
-      label: 'Image carousel',
-      title: 'A travel service that feels simple and personal.',
+      label: 'Car gallery',
+      title: 'See the car used for your private travel service.',
       description:
-        'Use this slider to showcase your real car, airport service, and favorite trip destinations.',
+        'This picture of our car gives you a glimpse of the comfort and style you can expect.',
       featured: 'Featured service',
       slides: [
         {
@@ -200,10 +200,10 @@ const content = {
       ],
     },
     gallery: {
-      label: 'Galeri gambar',
-      title: 'Layanan travel yang terasa simpel dan personal.',
+      label: 'Galeri mobil',
+      title: 'Lihat mobil yang digunakan untuk layanan travel pribadi Anda.',
       description:
-        'Gunakan slider ini untuk menampilkan mobil Anda, layanan bandara, dan tujuan perjalanan favorit.',
+        'Sekarang Anda bisa mengganti gambar contoh ini dengan foto mobil Anda sendiri di folder public image.',
       featured: 'Layanan unggulan',
       slides: [
         {

@@ -1,0 +1,20 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="120" y1="50" x2="1080" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="36" fill="url(#bg2)"/>
+  <rect x="0" y="590" width="1200" height="210" fill="#172554"/>
+  <rect x="250" y="430" width="520" height="110" rx="30" fill="#FFFFFF"/>
+  <path d="M360 375H645C700 375 740 405 770 440H320C335 402 360 375 360 375Z" fill="#DBEAFE"/>
+  <rect x="430" y="392" width="115" height="40" rx="10" fill="#93C5FD"/>
+  <rect x="550" y="392" width="118" height="40" rx="10" fill="#93C5FD"/>
+  <circle cx="380" cy="555" r="42" fill="#111827"/>
+  <circle cx="650" cy="555" r="42" fill="#111827"/>
+  <circle cx="380" cy="555" r="18" fill="#94A3B8"/>
+  <circle cx="650" cy="555" r="18" fill="#94A3B8"/>
+  <text x="90" y="120" fill="white" font-size="54" font-family="Arial, sans-serif" font-weight="700">Bowo Travel Car 2</text>
+  <text x="90" y="176" fill="#E9D5FF" font-size="28" font-family="Arial, sans-serif">Use this slot for another car angle or interior photo</text>
+</svg>
