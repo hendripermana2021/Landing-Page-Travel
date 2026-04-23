@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bowo-travel-medan.vercel.app/sitemap.xml
+Sitemap: https://bowo-travel.vercel.app/sitemap.xml
