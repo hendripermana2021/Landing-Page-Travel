@@ -241,6 +241,7 @@
 .gallery-section,
 .benefits-section,
 .about-section,
+.local-seo-section,
 .pricing-section,
 .testimonials-section,
 .faq-section {
@@ -376,6 +377,31 @@
   gap: 16px;
 }
 
+.local-seo-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.local-seo-card {
+  border-radius: 22px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.local-seo-card h3 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.local-seo-card p {
+  color: #475569;
+}
+
 .mini-card strong {
   display: block;
   margin-bottom: 6px;
@@ -456,6 +482,10 @@
   .pricing-grid,
   .testimonial-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .local-seo-grid {
+    grid-template-columns: 1fr;
   }
 }
 

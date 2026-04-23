@@ -6,7 +6,7 @@ const slideImages = ['/img/car-1-real.jpeg', '/img/car-2-real.jpeg', '/img/car-3
 
 const content = {
   en: {
-    pageTitle: 'Bowo Travel | Private Travel Service',
+    pageTitle: 'Bowo Travel Medan | Private Driver & Airport Transfer',
     navLabel: 'Primary navigation',
     brandKicker: 'Private driver service',
     headerNote: 'Airport transfer, city rides, and private trips with quick booking.',
@@ -94,6 +94,20 @@ const content = {
         { title: 'Own car service', text: 'A more personal experience for every ride.' },
       ],
     },
+    localSeo: {
+      label: 'Travel service in Medan',
+      title: 'Airport transfer Medan and private driver Medan.',
+      items: [
+        {
+          title: 'Airport transfer Medan',
+          text: 'Need antar jemput bandara Medan? Bowo Travel provides direct pickup and drop-off from Kualanamu Airport to hotels, homes, and city destinations with a private car and friendly driver.',
+        },
+        {
+          title: 'Private driver Medan',
+          text: 'Looking for sewa mobil dengan driver Medan? This service fits tourists, business visitors, and families who want flexible city transport, daily charter, and reliable local travel support.',
+        },
+      ],
+    },
     pricing: {
       label: 'Simple pricing',
       title: 'Choose the trip style that fits your plan.',
@@ -168,7 +182,7 @@ const content = {
     },
   },
   id: {
-    pageTitle: 'Bowo Travel | Layanan Travel Pribadi',
+    pageTitle: 'Bowo Travel Medan | Layanan Driver Pribadi & Antar Jemput Bandara',
     navLabel: 'Navigasi utama',
     brandKicker: 'Layanan driver pribadi',
     headerNote: 'Transfer bandara, perjalanan kota, dan trip pribadi dengan booking cepat.',
@@ -254,6 +268,20 @@ const content = {
         { title: 'Kontak langsung', text: 'Tanpa proses booking yang rumit.' },
         { title: 'Ramah wisatawan', text: 'Cocok untuk pengunjung pertama dan keluarga.' },
         { title: 'Mobil milik sendiri', text: 'Pengalaman yang lebih personal di setiap perjalanan.' },
+      ],
+    },
+    localSeo: {
+      label: 'Layanan travel di Medan',
+      title: 'Antar jemput bandara Medan dan sewa mobil dengan driver Medan.',
+      items: [
+        {
+          title: 'Antar jemput bandara Medan',
+          text: 'Butuh layanan antar jemput bandara Medan? Bowo Travel siap menjemput atau mengantar dari Bandara Kualanamu ke hotel, rumah, atau tujuan lain di kota dengan mobil pribadi yang nyaman.',
+        },
+        {
+          title: 'Sewa mobil dengan driver Medan',
+          text: 'Sedang cari sewa mobil dengan driver Medan? Layanan ini cocok untuk wisatawan, kebutuhan bisnis, dan keluarga yang ingin perjalanan fleksibel, charter harian, dan driver lokal yang ramah.',
+        },
       ],
     },
     pricing: {
@@ -511,6 +539,22 @@ function App() {
                 <strong>{item.title}</strong>
                 <span>{item.text}</span>
               </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="local-seo-section" aria-labelledby="local-seo-title">
+          <div className="section-heading">
+            <p className="section-label">{t.localSeo.label}</p>
+            <h2 id="local-seo-title">{t.localSeo.title}</h2>
+          </div>
+
+          <div className="local-seo-grid">
+            {t.localSeo.items.map((item) => (
+              <article className="local-seo-card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
             ))}
           </div>
         </section>
